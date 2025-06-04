@@ -172,10 +172,160 @@ h2 {
 }
 
 .weather-widget {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.weather-card {
     background: var(--white);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.weather-icon i {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.current-temp h4 {
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin: 0;
+}
+
+.conditions p {
+    font-size: 1.2rem;
+    color: var(--primary);
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+.extra-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+    color: var(--dark);
+    font-size: 0.9rem;
+}
+
+.extra-info i {
+    color: var(--primary);
+    margin-right: 0.5rem;
+}
+
+.forecast-container {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.forecast-container h3 {
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+    text-align: center;
+}
+
+.forecast-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.forecast-day {
+    text-align: center;
+    padding: 1rem;
+    background: var(--sand);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.forecast-day:hover {
+    transform: translateY(-5px);
+}
+
+.forecast-day h4 {
+    margin: 0 0 1rem 0;
+    color: var(--dark);
+}
+
+.forecast-day i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin: 0.5rem 0;
+}
+
+.forecast-temp {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 0.5rem 0;
+}
+
+.forecast-desc {
+    font-size: 0.9rem;
+    color: var(--dark);
+    margin: 0.5rem 0;
+}
+
+/* Loading and Error States */
+.loading-spinner {
+    color: var(--primary);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.loading-spinner i {
+    margin-right: 0.5rem;
+}
+
+.last-updated {
+    font-size: 0.8rem;
+    color: var(--dark);
+    opacity: 0.7;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+.retry-button {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem auto;
+    transition: background-color 0.3s ease;
+}
+
+.retry-button:hover {
+    background-color: var(--secondary);
+}
+
+.retry-button i {
+    font-size: 0.9rem;
 }
 
 /* Community Section */

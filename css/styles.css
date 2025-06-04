@@ -104,8 +104,9 @@ h2 {
 /* Hero Section */
 .hero {
     min-height: 80vh;
-    background: linear-gradient(rgba(26, 158, 187, 0.8), rgba(28, 71, 85, 0.8)),
-                url('../assets/hero-beach.jpg') center/cover;
+    background: linear-gradient(rgba(26, 158, 187, 0.7), rgba(28, 71, 85, 0.7)),
+                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600') center/cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,7 +128,9 @@ h2 {
 /* Map Section */
 .map-section {
     padding: 4rem 1rem;
-    background-color: var(--sand);
+    background: linear-gradient(rgba(244, 228, 188, 0.9), rgba(244, 228, 188, 0.9)),
+                url('https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1600') center/cover;
+    background-attachment: fixed;
 }
 
 .map-container {
@@ -168,7 +171,9 @@ h2 {
 /* Weather Section */
 .weather-section {
     padding: 4rem 1rem;
-    background-color: var(--white);
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+                url('https://images.unsplash.com/photo-1621789098261-4f30e62bf6e7?w=1600') center/cover;
+    background-attachment: fixed;
 }
 
 .weather-widget {
@@ -331,7 +336,9 @@ h2 {
 /* Community Section */
 .community-section {
     padding: 4rem 1rem;
-    background-color: var(--sand);
+    background: linear-gradient(rgba(244, 228, 188, 0.9), rgba(244, 228, 188, 0.9)),
+                url('https://images.unsplash.com/photo-1520116468816-95b69f847357?w=1600') center/cover;
+    background-attachment: fixed;
 }
 
 .community-feed {

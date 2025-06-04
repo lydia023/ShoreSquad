@@ -130,10 +130,39 @@ h2 {
     background-color: var(--sand);
 }
 
+.map-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
 #cleanup-map {
-    height: 500px;
+    height: 450px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.next-cleanup {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.next-cleanup h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.next-cleanup iframe {
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Weather Section */
